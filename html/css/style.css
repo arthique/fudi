@@ -63,20 +63,25 @@ body {
 
 .header {
   position: relative;
-  height: 110px;
   overflow: hidden; }
   .header .header__cover-image {
     position: absolute;
     width: 100%;
     z-index: -1; }
 
-.panel {
-  padding: 0 12.5%; }
+.wrapper {
+  margin: auto 12.5%; }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
 
 .cell {
   vertical-align: middle; }
@@ -114,25 +119,26 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start; }
-  .get-started .get-started__content {
+  .get-started .get-started__captions {
     width: 38.35%;
     max-width: 460px;
     max-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 19.87%; }
-  .get-started .content__caption {
+    margin-top: 19.87%;
+    margin-bottom: 19.87%; }
+  .get-started .caption {
     text-align: center;
     color: #FFF; }
-    .get-started .content__caption.content__caption_top_italic {
+    .get-started .caption.caption_top_italic {
       font: bold italic 2.25em/1 "Times New Roman", Times, Georgia, serif;
       opacity: 0.7; }
-    .get-started .content__caption.content__caption_top_big {
+    .get-started .caption.caption_top_big {
       font: bold 6.25em/1 "LatoLatin", Helvetica, Sans-serif; }
-    .get-started .content__caption.content__caption_bottom {
+    .get-started .caption.caption_bottom {
       font: normal 0.875em/1.875em "LatoLatin", Helvetica, Sans-serif; }
-    .get-started .content__caption .content__link {
+    .get-started .caption .caption_link {
       font: normal 1em/1 "LatoLatin", Helvetica, Sans-serif;
       color: #FFF;
       text-decoration: underline; }
@@ -141,7 +147,12 @@ body {
 
 .button {
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
   .button.button_border_white {
     font: bold 1.125em/1.313em "LatoLatin", Helvetica, Sans-serif;
     color: #FFF;
@@ -149,3 +160,24 @@ body {
     border: 2px solid #fff;
     -webkit-border-radius: 2px;
     border-radius: 2px; }
+
+.benefits {
+  padding: 100px 0; }
+  .benefits .benefit {
+    width: 360px; }
+    .benefits .benefit .benefit__icon {
+      display: block;
+      margin: 0 auto 5px; }
+    .benefits .benefit .benefit__title {
+      margin: auto; }
+      .benefits .benefit .benefit__title .title__text {
+        display: inline-block;
+        font: bold small-caps 1.6em/1.4em "LatoLatin", Helvetica, Sans-serif;
+        text-align: center; }
+      .benefits .benefit .benefit__title .title__underline {
+        margin: 0 auto 15px;
+        width: 70%;
+        border-bottom: 1px solid #f57365; }
+    .benefits .benefit .benefit__description {
+      font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
+      text-align: center; }
