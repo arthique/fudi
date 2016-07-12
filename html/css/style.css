@@ -160,6 +160,19 @@ body {
     border: 2px solid #fff;
     -webkit-border-radius: 2px;
     border-radius: 2px; }
+  .button.button_app {
+    display: inline-block;
+    margin-right: 10px;
+    height: 39px; }
+    .button.button_app.button_app_apple {
+      width: 112px;
+      background: url("../images/icon-app-apple.png") no-repeat center; }
+    .button.button_app.button_app_google {
+      width: 120px;
+      background: url("../images/icon-app-google.png") no-repeat center; }
+
+.container.container_bg_grey {
+  background-color: #F7F7F7; }
 
 .benefits {
   padding: 100px 0; }
@@ -181,3 +194,24 @@ body {
     .benefits .benefit .benefit__description {
       font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
       text-align: center; }
+
+.mobile-app {
+  padding-top: 100px; }
+  .mobile-app .mobile-app__image {
+    display: block;
+    margin-left: -20px; }
+  .mobile-app .mobile-app__details {
+    width: 45%; }
+  .mobile-app .details {
+    padding-top: 70px; }
+    .mobile-app .details .details__title {
+      display: inline-block;
+      padding-bottom: 5px; }
+      .mobile-app .details .details__title .title__text {
+        font: bold small-caps 1.6em/1.4em "LatoLatin", Helvetica, Sans-serif; }
+      .mobile-app .details .details__title .title__underline {
+        width: 33%;
+        border-bottom: 1px solid #f57365; }
+    .mobile-app .details .details__text {
+      font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
+      padding: 10px 0; }
