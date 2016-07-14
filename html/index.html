@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<link rel="stylesheet" href="css/style.css" />
+	<!--[if (lt IE 10)]>
+        <link rel="stylesheet" href="css/style-ie-fix.css" media="screen">
+    <![endif]-->
 	<script type="text/javascript" src="js/common.js"></script>
 	<script>
 	   	WebFontConfig = {
@@ -22,10 +25,10 @@
 	</script>	
 </head>
 <body>
-	<div class="page page_homepage">
-		<img class="page__cover-image" src="images/bg-homepage.jpg">
+	<div class="page page_homepage">	
 		<!-- Header -->
 		<header class="header" role="header">
+			<img class="header__cover-image" src="images/bg-homepage.jpg">
 		    <div class="wrapper row  bg_transparent">
 		    	<div class="cell cell_left logo">
 		    		<a class="logo__link" href="/" title="Back to homepage"><img class="logo__icon" src="./images/icon-logo.png" alt="Logo"></a>
