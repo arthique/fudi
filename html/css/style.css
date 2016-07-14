@@ -89,7 +89,7 @@ body {
   margin-left: -15px; }
 
 .nav {
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden; }
   .nav .nav__link {
@@ -110,11 +110,9 @@ body {
 
 .get-started {
   position: relative;
-  padding: 24.1% 12.5% 24.1%;
+  padding: 32.1% 12.5% 32.1%;
   height: 0;
   overflow: visible;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center; }
   .get-started .get-started__captions {
@@ -328,6 +326,8 @@ body {
   position: relative;
   /* If you`re needing more than 3 banners, maybe you
 	 might be using another way to represent your info... ;-) */ }
+  .carousel .carousel__input {
+    display: none; }
   .carousel .carousel__input:checked + .carousel__item {
     opacity: 1;
     pointer-events: auto;

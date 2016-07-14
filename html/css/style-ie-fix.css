@@ -1,0 +1,59 @@
+.row {
+  display: table;
+  width: 100%; }
+
+.cell {
+  display: table-cell; }
+  .cell.cell_center {
+    width: 70%; }
+  .cell.cell_right {
+    text-align: right; }
+
+.nav {
+  display: block; }
+
+.get-started {
+  width: auto;
+  margin: auto;
+  padding-left: 19.6%;
+  padding-right: 19.6%; }
+  .get-started .get-started__captions {
+    display: table-cell;
+    width: 100%;
+    text-align: center; }
+
+.button {
+  display: inline-block; }
+
+.benefits .benefit {
+  display: inline-block;
+  margin-right: 4.5%; }
+  .benefits .benefit:last-child {
+    margin-right: 0; }
+
+.mobile-app {
+  width: auto; }
+  .mobile-app .mobile-app__image,
+  .mobile-app .mobile-app__details {
+    display: table-cell;
+    vertical-align: top; }
+
+.cuisines {
+  font-size: 0; }
+  .cuisines .cuisines__title {
+    font-size: 16px; }
+  .cuisines .cuisine {
+    display: inline-block; }
+    .cuisines .cuisine .cuisine__caption {
+      font-size: 16px; }
+  .cuisines .cuisine__stats {
+    display: inline-block;
+    font-size: 16px; }
+
+.footer .footer__copyright,
+.footer .footer__design {
+  display: table-cell;
+  width: 50%; }
+
+.footer .footer__design {
+  text-align: right; }
