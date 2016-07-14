@@ -76,6 +76,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between; }
 
 .col {
@@ -133,7 +134,7 @@ body {
     text-align: center;
     color: #FFF; }
     .get-started .caption.caption_top_italic {
-      font: bold italic 2.25em/1 "Times New Roman", Times, Georgia, serif;
+      font: bold italic 2.25em/1 "LatoLatin", Helvetica, Sans-serif;
       opacity: 0.7; }
     .get-started .caption.caption_top_big {
       font: bold 6.25em/1 "LatoLatin", Helvetica, Sans-serif; }
@@ -174,26 +175,31 @@ body {
       width: 120px;
       background: url("../images/icon-app-google.png") no-repeat center; }
 
+.title {
+  display: inline-block; }
+  .title .title__text {
+    font: bold small-caps 1.6em/1.4em "LatoLatin", Helvetica, Sans-serif; }
+  .title .title__underline {
+    width: 33%;
+    margin: auto;
+    border-bottom: 1px solid #f57365; }
+    .title .title__underline.title__underline_left {
+      margin-left: 0; }
+    .title .title__underline.title__underline_w77 {
+      margin-bottom: 15px;
+      width: 70%; }
+
 .container.container_bg_grey {
   background-color: #F7F7F7; }
 
 .benefits {
   padding: 100px 0; }
   .benefits .benefit {
-    width: 360px; }
+    width: 360px;
+    text-align: center; }
     .benefits .benefit .benefit__icon {
       display: block;
       margin: 0 auto 5px; }
-    .benefits .benefit .benefit__title {
-      margin: auto; }
-      .benefits .benefit .benefit__title .title__text {
-        display: inline-block;
-        font: bold small-caps 1.6em/1.4em "LatoLatin", Helvetica, Sans-serif;
-        text-align: center; }
-      .benefits .benefit .benefit__title .title__underline {
-        margin: 0 auto 15px;
-        width: 70%;
-        border-bottom: 1px solid #f57365; }
     .benefits .benefit .benefit__description {
       font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
       text-align: center; }
@@ -208,13 +214,7 @@ body {
   .mobile-app .details {
     padding-top: 70px; }
     .mobile-app .details .details__title {
-      display: inline-block;
       padding-bottom: 5px; }
-      .mobile-app .details .details__title .title__text {
-        font: bold small-caps 1.6em/1.4em "LatoLatin", Helvetica, Sans-serif; }
-      .mobile-app .details .details__title .title__underline {
-        width: 33%;
-        border-bottom: 1px solid #f57365; }
     .mobile-app .details .details__text {
       font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
       padding: 10px 0; }
@@ -260,6 +260,62 @@ body {
       display: inline-block;
       content: "-";
       padding-left: 5px; }
+
+.cuisines {
+  text-align: center; }
+  .cuisines .cuisines__title {
+    margin: 85px auto 45px; }
+  .cuisines .cuisine {
+    display: block;
+    position: relative;
+    width: 20%;
+    min-height: 225px;
+    text-decoration: none; }
+    .cuisines .cuisine .cuisine__image {
+      display: block;
+      position: absolute;
+      width: 100%;
+      z-index: -1; }
+    .cuisines .cuisine .cuisine__image-filter {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.30;
+      background-color: black;
+      -webkit-transition: opacity 0.5s ease 0s;
+      -moz-transition: opacity 0.5s ease 0s;
+      -o-transition: opacity 0.5s ease 0s;
+      -ms-transition: opacity 0.5s ease 0s;
+      transition: opacity 0.5s ease 0s; }
+    .cuisines .cuisine:hover .cuisine__image-filter {
+      opacity: 0; }
+    .cuisines .cuisine .cuisine__caption {
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      z-index: 2; }
+      .cuisines .cuisine .cuisine__caption .cuisine__amount {
+        display: block;
+        padding-top: 5em;
+        font: italic 1em/1 "LatoLatin Light", Helvetica, Sans-serif; }
+      .cuisines .cuisine .cuisine__caption .cuisine__name {
+        display: block;
+        font: bold small-caps 3.125em/0.9 "LatoLatin", Helvetica, Sans-serif;
+        letter-spacing: 0.04em; }
+    .cuisines .cuisine:hover .cuisine__amount,
+    .cuisines .cuisine:hover .cuisine__name {
+      text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
+  .cuisines .cuisine__stats {
+    width: 160px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    text-align: center; }
+    .cuisines .cuisine__stats .stats__amount {
+      font: bold 2.125em/1 "LatoLatin", Helvetica, Sans-serif; }
+    .cuisines .cuisine__stats .stats__caption {
+      padding-top: 8px;
+      font: normal 1em/1.125 "LatoLatin Light", Helvetica, Sans-serif; }
 
 .carousel {
   overflow: hidden;
