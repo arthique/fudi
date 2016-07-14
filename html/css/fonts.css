@@ -68,3 +68,23 @@
     url('./fonts/LatoLatin-LightItalic.woff') format('woff'),
     url('./fonts/LatoLatin-LightItalic.ttf') format('truetype');  
 }
+@font-face {
+  font-family: 'LatoLatin Hairline';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/LatoLatin-Hairline.eot');
+  src: url('./fonts/LatoLatin-Hairline.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/LatoLatin-Hairline.woff2') format('woff2'),
+    url('./fonts/LatoLatin-Hairline.woff') format('woff'),
+    url('./fonts/LatoLatin-Hairline.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'LatoLatin Hairline';
+  font-style: italic;
+  font-weight: normal; 
+  src: url('./fonts/LatoLatin-HairlineItalic.eot');
+  src: url('./fonts/LatoLatin-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/LatoLatin-HairlineItalic.woff2') format('woff2'),
+    url('./fonts/LatoLatin-HairlineItalic.woff') format('woff'),
+    url('./fonts/LatoLatin-HairlineItalic.ttf') format('truetype');  
+}

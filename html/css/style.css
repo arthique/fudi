@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
@@ -149,10 +150,12 @@ body {
   display: block;
   text-decoration: none;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none; }
   .button.button_border_white {
     font: bold 1.125em/1.313em "LatoLatin", Helvetica, Sans-serif;
     color: #FFF;
@@ -215,3 +218,92 @@ body {
     .mobile-app .details .details__text {
       font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
       padding: 10px 0; }
+
+.container_bg_review {
+  background: url("../images/bg-homepage-review.jpg") no-repeat top center #4a3949; }
+
+.reviews {
+  border-bottom: 1px solid #584957;
+  padding-bottom: 77px; }
+  .reviews .reviewer__photos {
+    width: 105px;
+    height: 105px;
+    display: block;
+    margin: 77px auto 20px;
+    border: 5px solid #928892;
+    -webkit-border-radius: 58px;
+    border-radius: 58px; }
+  .reviews .reviewer__quote {
+    font: normal 1.875em/1.2 "LatoLatin Hairline", Helvetica, Sans-serif;
+    color: #fff;
+    text-align: center;
+    width: 77%;
+    margin: auto auto 20px; }
+    .reviews .reviewer__quote::before {
+      display: inline-block;
+      content: "“"; }
+    .reviews .reviewer__quote::after {
+      display: inline-block;
+      content: "”"; }
+  .reviews .reviewer__name {
+    width: 77%;
+    margin: auto;
+    font: italic 1.125em/2 "LatoLatin Hairline", Helvetica, Sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px; }
+    .reviews .reviewer__name::before {
+      display: inline-block;
+      content: "-";
+      padding-right: 6px; }
+    .reviews .reviewer__name::after {
+      display: inline-block;
+      content: "-";
+      padding-left: 5px; }
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  /* If you`re needing more than 3 banners, maybe you
+	 might be using another way to represent your info... ;-) */ }
+  .carousel .carousel__input:checked + .carousel__item {
+    opacity: 1;
+    pointer-events: auto;
+    position: static; }
+  .carousel .carousel__item {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.6s ease-in-out;
+    width: 100%;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none; }
+  .carousel .carousel__indicators {
+    bottom: 5%;
+    left: 5%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    right: 5%;
+    text-align: center;
+    z-index: 2; }
+    .carousel .carousel__indicators .carousel__indicator-wrapper {
+      display: inline-block;
+      list-style: none; }
+    .carousel .carousel__indicators .carousel__indicator {
+      border-radius: 50%;
+      cursor: pointer;
+      color: #796D78;
+      display: block;
+      font-size: 20px;
+      line-height: 1;
+      padding: 5px 4px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+  .carousel #qt-1:checked ~ .carousel__indicators .carousel__indicator[for="qt-1"],
+  .carousel #qt-2:checked ~ .carousel__indicators .carousel__indicator[for="qt-2"] {
+    color: #fff; }
