@@ -15,8 +15,7 @@
 .get-started {
   width: auto;
   margin: auto;
-  padding-left: 19.6%;
-  padding-right: 19.6%; }
+  padding: 19.6%; }
   .get-started .get-started__captions {
     display: table-cell;
     width: 100%;
@@ -46,9 +45,11 @@
     display: inline-block; }
     .cuisines .cuisine .cuisine__caption {
       font-size: 16px; }
-  .cuisines .cuisine__stats {
+  .cuisines .stats {
     display: inline-block;
-    font-size: 16px; }
+    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em; }
 
 .footer .footer__copyright,
 .footer .footer__design {

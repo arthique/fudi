@@ -185,22 +185,30 @@ body {
   background-color: #F7F7F7; }
 
 .benefits {
-  padding: 100px 0; }
+  padding: 70px 0;
+  justify-content: space-around; }
   .benefits .benefit {
     width: 360px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center; }
     .benefits .benefit .benefit__icon {
       display: block;
       margin: 0 auto 5px; }
     .benefits .benefit .benefit__description {
       font: normal 1em/1.65em "LatoLatin Light", Helvetica, Sans-serif;
-      text-align: center; }
+      text-align: center;
+      max-height: 5em;
+      overflow: hidden;
+      text-overflow: ellipsis; }
 
 .mobile-app {
   padding-top: 100px; }
   .mobile-app .mobile-app__image {
+    align-self: flex-end;
     display: block;
-    margin-left: -20px; }
+    margin-left: -20px;
+    height: 100%; }
   .mobile-app .mobile-app__details {
     width: 45%; }
   .mobile-app .details {
@@ -230,6 +238,9 @@ body {
     color: #fff;
     text-align: center;
     width: 77%;
+    height: 3.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: auto auto 20px; }
     .reviews .reviewer__quote::before {
       display: inline-block;
@@ -257,11 +268,13 @@ body {
   text-align: center; }
   .cuisines .cuisines__title {
     margin: 85px auto 45px; }
+  .cuisines .cuisines__list {
+    justify-content: center; }
   .cuisines .cuisine {
     display: block;
     position: relative;
-    width: 20%;
-    min-height: 225px;
+    width: 320px;
+    height: 225px;
     text-decoration: none; }
     .cuisines .cuisine .cuisine__image {
       display: block;
@@ -283,13 +296,12 @@ body {
     .cuisines .cuisine:hover .cuisine__image-filter {
       opacity: 0; }
     .cuisines .cuisine .cuisine__caption {
-      position: absolute;
       width: 100%;
       color: #fff;
-      z-index: 2; }
+      z-index: 2;
+      padding-top: 5em; }
       .cuisines .cuisine .cuisine__caption .cuisine__amount {
         display: block;
-        padding-top: 5em;
         font: italic 1em/1 "LatoLatin Light", Helvetica, Sans-serif; }
       .cuisines .cuisine .cuisine__caption .cuisine__name {
         display: block;
@@ -299,13 +311,14 @@ body {
     .cuisines .cuisine:hover .cuisine__name {
       text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
   .cuisines .cuisine__stats {
+    padding-top: 58px; }
+  .cuisines .stats {
     width: 160px;
-    padding-top: 58px;
     padding-bottom: 58px;
     text-align: center; }
-    .cuisines .cuisine__stats .stats__amount {
+    .cuisines .stats .stats__amount {
       font: bold 2.125em/1 "LatoLatin", Helvetica, Sans-serif; }
-    .cuisines .cuisine__stats .stats__caption {
+    .cuisines .stats .stats__caption {
       padding-top: 8px;
       font: normal 1em/1.125 "LatoLatin Light", Helvetica, Sans-serif; }
 
@@ -320,6 +333,69 @@ body {
     color: #8B8B8B; }
   .footer .footer__design .footer__design_black {
     color: #000000; }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: calc(1vw + 1vh - .25vmin); }
+  .wrapper {
+    margin: auto 6.25%; }
+  .get-started {
+    padding-top: 25.5%;
+    padding-bottom: 25.5%; }
+    .get-started .caption.caption_top_italic {
+      font-size: 1.125em;
+      line-height: 1; }
+    .get-started .caption.caption_top_big {
+      font-size: 3.125em;
+      line-height: 1; }
+    .get-started .caption.caption_bottom {
+      font-size: 0.625em; }
+    .get-started .button.button_border_white {
+      margin: 15px auto;
+      font-size: 0.875em;
+      line-height: 1;
+      color: #FFF;
+      padding: 11px 40px; }
+  .benefits {
+    padding: 30px 0; }
+    .benefits .benefit {
+      width: 270px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+  .mobile-app {
+    padding-top: 50px; }
+    .mobile-app .mobile-app__details {
+      width: 55%; }
+    .mobile-app .details {
+      padding-top: 0;
+      padding-bottom: 20px; }
+      .mobile-app .details .details__text {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+  .reviews {
+    padding-bottom: 43px; }
+  .cuisines .cuisines__title {
+    margin: 55px auto 25px; }
+  .cuisines .cuisine {
+    width: 256px;
+    height: 180px; }
+    .cuisines .cuisine .cuisine__caption {
+      padding-top: 4em; }
+      .cuisines .cuisine .cuisine__caption .cuisine__amount {
+        display: block;
+        font-size: 1em;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
+      .cuisines .cuisine .cuisine__caption .cuisine__name {
+        font-size: 3.3em;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
+    .cuisines .cuisine .cuisine__image-filter {
+      display: none; }
+  .cuisines .cuisine__stats {
+    padding-top: 28px; }
+  .cuisines .stats {
+    padding-bottom: 28px; }
+    .cuisines .stats .stats__amount {
+      font-size: 1.7em; } }
 
 .carousel {
   overflow: hidden;
