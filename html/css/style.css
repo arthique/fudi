@@ -334,6 +334,87 @@ body {
   .footer .footer__design .footer__design_black {
     color: #000000; }
 
+@media screen and (min-width: 641px) and (max-width: 767px) {
+  .wrapper {
+    margin: auto 3.125%; }
+  .get-started {
+    padding-top: 21.8%;
+    padding-bottom: 21.8%; }
+    .get-started .caption.caption_top_italic {
+      font-size: 1.125em;
+      line-height: 1; }
+    .get-started .caption.caption_top_big {
+      font-size: 3.125em;
+      line-height: 1; }
+    .get-started .caption.caption_bottom {
+      font-size: 0.625em; }
+    .get-started .button.button_border_white {
+      margin: 10px auto;
+      font-size: 0.625em;
+      line-height: 1;
+      color: #FFF;
+      padding: 11px 20px; }
+  .benefits {
+    padding: 20px 0; }
+    .benefits .benefit {
+      width: 270px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .benefits .benefit .benefit__icon {
+        width: 71px;
+        height: 71px; }
+  .title .title__text {
+    font-size: 1.3em;
+    line-height: 1.2em; }
+  .title .title__underline.title__underline_w77 {
+    margin-bottom: 10px; }
+  .mobile-app {
+    padding-top: 40px; }
+    .mobile-app .mobile-app__details {
+      width: 55%; }
+    .mobile-app .details {
+      padding-top: 0;
+      padding-bottom: 20px; }
+      .mobile-app .details .details__text {
+        padding-top: 5px;
+        padding-bottom: 5px; }
+    .mobile-app .mobile-app__image {
+      margin-left: 0; }
+  .reviews {
+    padding-bottom: 43px; }
+    .reviews .reviewer__photos {
+      margin-top: 47px; }
+    .reviews .reviewer__quote {
+      font-size: 1.625em; }
+  .cuisines .cuisines__title {
+    margin: 30px auto 15px; }
+  .cuisines .cuisine {
+    width: 256px;
+    height: 180px; }
+    .cuisines .cuisine .cuisine__caption {
+      padding-top: 4em; }
+      .cuisines .cuisine .cuisine__caption .cuisine__amount {
+        display: block;
+        font-size: 1em;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
+      .cuisines .cuisine .cuisine__caption .cuisine__name {
+        font-size: 2.8em;
+        text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); }
+    .cuisines .cuisine .cuisine__image-filter {
+      display: none; }
+  .cuisines .cuisine__stats {
+    padding-top: 28px; }
+  .cuisines .stats {
+    padding-bottom: 28px; }
+    .cuisines .stats .stats__amount {
+      font-size: 1.4em; }
+  .footer {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .footer .footer__copyright,
+    .footer .footer__design {
+      font-size: 0.625em; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: calc(1vw + 1vh - .25vmin); }
