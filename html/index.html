@@ -25,14 +25,15 @@
 	</script>	
 </head>
 <body>
-	<div class="page page_homepage">	
+	<div class="page page_homepage">
+		<a name="get-started"></a>	
 		<!-- Header -->
 		<header class="header" role="header">
-			<img class="header__cover-image" src="images/bg-homepage.jpg" srcset="images/bg-homepage-w1024.jpg 1024w">
+			<img class="header__cover-image" src="./images/bg-homepage.jpg" srcset="./images/bg-homepage-w1024.jpg 1024w, ./images/bg-homepage-w640.jpg 640w, ./images/bg-homepage-w480.jpg 480w" sizes="(max-width: 480px) 480px, ((min-width: 481px) and (max-width: 640px)) 640px,((min-width: 641px) and (max-width: 1024px)) 1024px, 100vw" >
 			<div class="wrapper">				
 			    <div class="row  bg_transparent">
 			    	<div class="cell cell_left logo">
-			    		<a class="logo__link" href="/" title="Back to homepage"><img class="logo__icon" src="./images/icon-logo.png" alt="Logo"></a>
+			    		<a class="logo__link" href="#get-started" title="Back to homepage"><img class="logo__icon" src="./images/icon-logo.png" alt="Logo"></a>
 			    	</div>
 			    	<div class="cell cell_center"></div>
 			    	<div class="cell cell_right">
@@ -47,11 +48,12 @@
 			    		</nav>
 			    	</div>
 			    </div>
-			    <div class="row get-started">  	
-			    	<div class="get-started__captions">
+			    <div class="row get-started">
+			    	<a class="button button__logo" href="#get-started"><img class="button__logo-icon" src="./images/icon-logo-w640.png" alt="Get Started Logo"></a>  	
+			    	<div class="get-started__captions">	
 			    		<div class="caption caption_top_italic">Find your Favorite</div>
 			    		<div class="caption caption_top_big">RECIPES</div>
-			    		<a class="button button_border_white">GET STARTED</a>
+			    		<a class="button button_border_white" href="#benefits">GET STARTED</a>
 			    		<div class="caption caption_bottom">OR SEND US YOUR OWN RECIPES AND <a class="caption_link" href="#getrewarded">GET REWARDED</a>!</div>
 			    	</div>
 			    </div>
@@ -62,6 +64,7 @@
 		<main class="content" role="main">
 		    <section class="container">
 		    	<div class="wrapper">
+		    		<a name="benefits"></a>
 			    	<div class="row benefits">
 			    		<div class="benefit">
 			    			<img class="benefit__icon" src="images/icon-get-inspired.png" height="107" width="107" alt="Get inspired">
