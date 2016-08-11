@@ -117,7 +117,7 @@ body {
   overflow: visible;
   justify-content: center;
   align-items: center; }
-  .get-started .button__logo {
+  .get-started .get-started__logo {
     display: none; }
   .get-started .get-started__captions {
     max-width: 460px;
@@ -171,6 +171,8 @@ body {
     .button.button_app.button_app_google {
       width: 120px;
       background: url("../images/icon-app-google.png") no-repeat center; }
+  .button.button_mobile {
+    display: none; }
 
 .title {
   display: inline-block; }
@@ -341,7 +343,7 @@ body {
     color: #000000; }
 
 @media screen and (max-device-width: 480px) {
-  .get-started .button.button__logo {
+  .get-started .get-started__logo {
     margin: 15.5% auto 15%; }
   .get-started .caption.caption_top_italic {
     font-size: 1.125em;
@@ -377,11 +379,11 @@ body {
   .get-started {
     padding: 0;
     height: auto; }
-    .get-started .button__logo {
+    .get-started .get-started__logo {
       display: block;
       width: 50%;
       margin: 22.5% auto 22%; }
-      .get-started .button__logo .button__logo-icon {
+      .get-started .get-started__logo .get-started__logo-icon {
         display: block;
         width: 100%; }
     .get-started .get-started__captions {
@@ -389,12 +391,11 @@ body {
       height: auto; }
   .benefits,
   .mobile-app,
-  .cuisines {
+  .cuisines,
+  .button.button_desktop {
     display: none; }
-    .benefits:target,
-    .mobile-app:target,
-    .cuisines:target {
-      display: block; } }
+  .button.button_mobile {
+    display: block; } }
 
 @media screen and (min-device-width: 641px) and (max-width: 767px) {
   .wrapper {

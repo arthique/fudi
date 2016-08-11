@@ -18,14 +18,26 @@
 	};
 	app.isTouchDevice = function() {
 		return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+	};
+	app.isHiddenElement = function(el){
+		return ((el.offsetParent === null) ? true : false);
 	}
 	window.app = app;
-	app.init();
 })(window);
 
 (function() {
-	var isTest = function(){
-		console.log('test');
+	var toggleMobilePage = function(){
+		app.vars.touch = "touch";
+		var actionElArray = document.querySelectorAll('[data-action]');
+		actionElArray.forEach(function(el,index,arr){
+			if(el.getAttribute('data-action') == app.vars.touch){
+
+			}
+		});
 	}
-	app.init(isTest);
+	app.init(toggleMobilePage);
 })(app);
+
+window.onload = function () {
+	app.init();
+}

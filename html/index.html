@@ -30,7 +30,7 @@
 		<!-- Header -->
 		<header class="header" role="header">
 			<img class="header__cover-image" src="./images/bg-homepage.jpg" srcset="./images/bg-homepage-w1024.jpg 1024w" alt="">
-			<img class="header__cover-image header__cover-image-mobile" src="./images/bg-homepage-w640.jpg" srcset="./images/bg-homepage-w480.jpg 1x,./images/bg-homepage-w640.jpg 2x"  alt="" >
+			<img class="header__cover-image header__cover-image-mobile" data-event="togglePage" data-id="getstarted" src="./images/bg-homepage-w640.jpg" srcset="./images/bg-homepage-w480.jpg 1x,./images/bg-homepage-w640.jpg 2x"  alt="" >
 			<div class="wrapper">				
 			    <div class="row  bg_transparent">
 			    	<div class="cell cell_left logo">
@@ -49,12 +49,13 @@
 			    		</nav>
 			    	</div>
 			    </div>
-			    <div class="row get-started">
-			    	<a class="button button__logo" href="#get-started"><img class="button__logo-icon" src="./images/icon-logo-w640.png" alt="Get Started Logo"></a>  	
+			    <div class="row get-started" data-event="togglePage" data-id="getstarted">
+			    	<div class="get-started__logo"><img class="get-started__logo-icon" src="./images/icon-logo-w640.png" alt="Get Started Logo"></div>  	
 			    	<div class="get-started__captions">	
 			    		<div class="caption caption_top_italic">Find your Favorite</div>
 			    		<div class="caption caption_top_big">RECIPES</div>
-			    		<a class="button button_border_white" href="#benefits">GET STARTED</a>
+			    		<a class="button button_desktop button_border_white" href="#benefits">GET STARTED</a>
+			    		<a class="button button_mobile button_border_white" data-action="touch" href="#benefits">GET STARTED</a>
 			    		<div class="caption caption_bottom">OR SEND US YOUR OWN RECIPES AND <a class="caption_link" href="#getrewarded">GET REWARDED</a>!</div>
 			    	</div>
 			    </div>
@@ -66,7 +67,7 @@
 		    <section class="container">
 		    	<div class="wrapper">
 		    		<a name="benefits"></a>
-			    	<div class="row benefits">
+			    	<div class="row benefits" data-event="togglePage" data-id="benefits">
 			    		<div class="benefit">
 			    			<img class="benefit__icon" src="images/icon-get-inspired.png" height="107" width="107" alt="Get inspired">
 			    			<div class="benefit__title title">
@@ -140,7 +141,7 @@
 		    	</div>
 		    </section>
 		    <section class="container">
-		    	<div class="cuisines">
+		    	<div class="cuisines"  data-event="togglePage" data-id="cuisines">
 		    		<div class="cuisines__title title">
 		    			<h4 class="title__text">browse by cuisines</h4>
 		    			<div class="title__underline"></div>
