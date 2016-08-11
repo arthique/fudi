@@ -7,7 +7,7 @@
 			app.consts = {};
 			app.names = {};
 			app.vars = {};
-			app.names.button = "button";	
+			app.names.button = 'button';	
 		}
 		if(typeof param == 'function'){
 			app[param.name] = param;
@@ -27,13 +27,19 @@
 
 (function() {
 	var toggleMobilePage = function(){
-		app.vars.touch = "touch";
+		app.vars.touch = 'touch';
+		app.names.getstarted = 'getstarted'
 		var actionElArray = document.querySelectorAll('[data-action]');
-		actionElArray.forEach(function(el,index,arr){
-			if(el.getAttribute('data-action') == app.vars.touch){
-
+		var elGetstartedArray = document.querySelectorAll('[data-id]').filter(function (el){
+			return el.getAttribute('data-id').toLowerCase() == app.names.getstarted;
+		});
+		actionElArray.forEach(function(el,index,arr){		
+			if(el.getAttribute('data-action') == app.vars.touch && el.getAttribute('href').length > 1){
+				var toPage = el.getAttribute('href').substring(1);
+				elGetstartedArray.forEach(function(el,index,arr){}
 			}
 		});
+		//TODO It still does not work 
 	}
 	app.init(toggleMobilePage);
 })(app);
