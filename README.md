@@ -1,7 +1,7 @@
 Fudi html template
 =============
 This template is example of my work as a junior frontend developer.
-I use HTML5, Sass and JavaScript in my work.
+I use HTML5, Sass and JavaScript.
 
 ## Demo
 **[Look at the template](http://htmlpreview.github.io/?https://github.com/arthique/fudi/blob/master/html/index.html)**
